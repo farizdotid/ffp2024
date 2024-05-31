@@ -22,7 +22,7 @@ export default function MobileHeader() {
         >
           <ul className="overflow-hidden flex flex-col items-center gap-4 text-2xl capitalize">
             <li>
-              <a href="https://ekrafpurwakarta.com/">Ekraf Purwakarta</a>
+              <a href="#footer">Ekraf Purwakarta</a>
             </li>
 
             <li>
