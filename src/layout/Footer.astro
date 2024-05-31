@@ -1,0 +1,50 @@
+---
+const images = [
+  "images/logo_ekraf_webp.webp",
+  "images/logo_purwakarta_creative_center_webp.webp",
+];
+---
+
+<section id="footer" class="pb-16 pt-8 flex flex-col lg:flex-row gap-8">
+  <div class="flex flex-wrap gap-4 justify-center lg:w-1/2 items-center">
+    {
+      images.map((e) => {
+        return <img class="m-2 aspect-square object-contain h-64 md:h-48" src={e} />;
+      })
+    }
+  </div>
+
+  <div class="flex flex-col gap-4 lg:w-1/2">
+    <h1 class="text-3xl lg:text-5xl mb-2">Ekraf Purwakarta</h1>
+    <p class="text-xl sm:max-w-[90%]">
+      Lembaga nonstruktural yang dibentuk untuk membantu pelaksanaan Ekonomi
+      Kreatif di Purwakarta dengan anggota para pelaku, Akademisi, Praktisi dan
+      Media. Mereka diharapkan ikut merencanakan serta mendampingi pelaku
+      ekonomi kreatif di lapangan.
+    </p>
+    <ul class="flex gap-2 text-2xl">
+      <li>
+        <a href="https://www.instagram.com/ekrafpurwakarta/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.facebook.com/purwakartacreativehub/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://ekrafpurwakarta.com/" target="_blank">
+          <i class="fa-solid fa-globe"></i>
+        </a>
+      </li>
+    </ul>
+    <span
+      >Copyright <i class="fa-regular fa-copyright inline"></i> 2023 · Ekraf Purwakarta
+      · Connect, Collaboration, Commerce</span
+    >
+  </div>
+</section>
