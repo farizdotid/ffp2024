@@ -1,0 +1,40 @@
+---
+const statistics = [
+	{
+		title: "Lomba Film",
+		value: "3 Juni - 1 Juli 2024",
+	},
+	{
+		title: "Penjurian",
+		value: "2 - 4 Juli 2024",
+	},
+	{
+		title: "Awarding Pemenang",
+		value: "7 Juli",
+	},
+    {
+		title: "Pasar Kreatif Purwakarta",
+		value: "7 Juli",
+	},
+];
+---
+<div
+	class="bg-zinc-500 bg-opacity-10 rounded-lg p-6 max-w-[1000px] mx-auto flex items-center justify-center gap-6 flex-wrap md:p-12 md:rounded-3xl"
+>
+	<div class="flex gap-6 mx-auto flex-wrap justify-center items-center text-center sm:mx-0">
+		{
+			statistics.map((e) => {
+				return (
+					<div>
+						<h2>{e.title}</h2>
+						<span class="text-2xl font-medium md:text-2xl">
+							{" "}
+							{e.value}
+						</span>
+					</div>
+				);
+			})
+		}
+	</div>
+	
+</div>
